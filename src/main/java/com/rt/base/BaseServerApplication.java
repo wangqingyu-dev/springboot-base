@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BaseServerApplication {
 
 	public static void main(String[] args) {
+		System.out.println("33");
 		SpringApplication.run(BaseServerApplication.class, args);
 	}
 
