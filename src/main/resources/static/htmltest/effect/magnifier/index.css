@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  div{
+    float: left;
+  }
+  body{
+    background-color: rgb(39, 37, 37);
+  }
+  img{
+    display: block;
+  }
+  .small-img{
+    position: relative;
+  }
+  .small-img img{
+    width: 500px;
+    height: 500px;
+  }
+  .big-img{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid red
+  }
+  .big-img img{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+  }
+  .move-bar{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(255,255,255,0.3);
+  }

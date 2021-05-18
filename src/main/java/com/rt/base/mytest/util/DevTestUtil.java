@@ -1,0 +1,114 @@
+package com.rt.base.mytest.util;
+
+/**
+ * @author liW
+ * @version 1.0
+ * @date 2019-6-28 9:52
+ */
+public class DevTestUtil {
+    public static String singleWinStr = "{addTimeStr = 2019 - 06 - 24 17: 25: 25,\n" +
+            "addWord = SUCCESS,\n" +
+            "agentCode = 2102980331,\n" +
+            "agentName = 大连圣大国际物流有限公司,\n" +
+            "applyCustoms = 0900,\n" +
+            "billDateStr = 2019 - 06 - 24 00: 00: 00,\n" +
+            "billNo = COSU4516160850,\n" +
+            "budgetType = 1,\n" +
+            "contrNo = GHHKCT - 18002,\n" +
+            "corpCode = ,\n" +
+            "corpType = 01,\n" +
+            "createUser = LIJING01111,\n" +
+            "cusSeq = ,\n" +
+            "cutMode = 101,\n" +
+            "cutModeName = 一般征税,\n" +
+            "dataSrcModeCode = SW,\n" +
+            "dataSrcUnitCode = SW21000020161201,\n" +
+            "dealTimeStr = ,\n" +
+            "declPort = 0908,\n" +
+            "declPortName = 连大窑湾,\n" +
+            "delayMark = 0,\n" +
+            "dutyFlag = -,\n" +
+            "dutyFormNo = ,\n" +
+            "entrustDateStr = 2019 - 06 - 24 00: 00: 00,\n" +
+            "entryId = 090820191080074220,\n" +
+            "exchequerName = 国家金库大连市中山区支库,\n" +
+            "extendField1 = ,\n" +
+            "extendField2 = ,\n" +
+            "extendField3 = ,\n" +
+            "genDateStr = 2019 - 06 - 24 13: 19: 09,\n" +
+            "goodsName = 柞木表板,\n" +
+            "handOrgCode = 2102980331,\n" +
+            "handOrgName = 大连圣大国际物流有限公司,\n" +
+            "handleType = 1,\n" +
+            "iEDateStr = 2019 - 06 - 24 00: 00: 00,\n" +
+            "iEFlag = I,\n" +
+            "iEFlagName = 进口,\n" +
+            "iEPort = 0908,\n" +
+            "iEPortName = 连大窑湾,\n" +
+            "incomeName = 中央金库,\n" +
+            "incomeSys = 税务系统,\n" +
+            "limitDate = null,\n" +
+            "limitDateStr = ,\n" +
+            "loanInfoId = ,\n" +
+            "ownerCode = 2115960894,\n" +
+            "ownerName = 大连德尔福木业有限公司,\n" +
+            "payAcct = 75060154740011036,\n" +
+            "payOpbkCode = 310290000013,\n" +
+            "payOpbkName = 上海浦东发展银行,\n" +
+            "payType = 01,\n" +
+            "payTypeStr = 普通支付,\n" +
+            "paybkCode = 310221000016,\n" +
+            "paybkName = 上海浦东发展银行,\n" +
+            "payeeAcct = 2560,\n" +
+            "payeeBankNo = ,\n" +
+            "payeeName = 中央金库,\n" +
+            "payeeOrgCode = 3501060000,\n" +
+            "printDate = null,\n" +
+            "printDateStr = ,\n" +
+            "printStatus = y,\n" +
+            "printVouSign = 0,\n" +
+            "procDesc = 银行扣税成功， 海关核注成功,\n" +
+            "protocolNo = 0900201801007602,\n" +
+            "remark = ,\n" +
+            "remark1 = ,\n" +
+            "remark2 = ,\n" +
+            "spt1 = ,\n" +
+            "spt2 = ,\n" +
+            "spt3 = ,\n" +
+            "subjectCode = 101010201,\n" +
+            "subjectLevel = ,\n" +
+            "subjectName = 进口货物增值税,\n" +
+            "swTaxId = 290791595,\n" +
+            "systemType = 01,\n" +
+            "taxCapital = 叁万贰仟肆佰陆拾肆元壹角玖分,\n" +
+            "taxDateStr = 2019 - 06 - 24,\n" +
+            "taxFileStatus = y,\n" +
+            "taxHeadSeqNo = 000000000290494477,\n" +
+            "taxId = 02,\n" +
+            "taxOrgCode = 39090,\n" +
+            "taxPayCode = 2115960894,\n" +
+            "taxPayCode1 = 2115960894,\n" +
+            "taxPayId = 290791597,\n" +
+            "taxPayName = 大连德尔福木业有限公司,\n" +
+            "taxPayName1 = 大连德尔福木业有限公司,\n" +
+            "taxPntPayCode = 2115960894,\n" +
+            "taxPntPayName = 大连德尔福木业有限公司,\n" +
+            "taxType = L,\n" +
+            "taxTypeName = 进口增值税,\n" +
+            "taxvouNo = 090820191080074220 - L02,\n" +
+            "taxyRegNo = 91210244 MA0XTEQJ4T,\n" +
+            "traAmt = 32464.19,\n" +
+            "traNo = 00102740,\n" +
+            "tradeCode = 2115960894,\n" +
+            "tradeMode = 0110,\n" +
+            "tradeModeName = 一般贸易,\n" +
+            "tradeName = 大连德尔福木业有限公司,\n" +
+            "trafName = ,\n" +
+            "transStatus = S,\n" +
+            "transStatusName = 支付成功,\n" +
+            "transStatusStr = ,\n" +
+            "trimSign = 0,\n" +
+            "txcatgNum = 1,\n" +
+            "updateTimeStr = 2019 - 06 - 24 17: 25: 48,\n" +
+            "updateUser = LIJING01111}\n";
+}

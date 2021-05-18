@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>My space</title>
+    <link rel="stylesheet" href="../css/games.css">
+    <script src="../js/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="../live2d/assets/waifu.min.css?v=1.4.2"/>
+</head>
+<body>
+<div class="title">
+    欢迎使用 我的空间
+</div>
+<!--<audio controls="controls" autoplay="autoplay">-->
+    <!--<source src="./video/love.mp3" type="audio/mpeg"/>-->
+<!--</audio>-->
+<div class="cube">
+    <!-- 外层立方体 -->
+    <div class="outer-cube">
+        <div class="outer-top">
+            <img src="../images/u=1479526554,932577210&fm=26&gp=0.jpg"/>
+        </div>
+        <div class="outer-bottom">
+            <img src="../images/u=1536127936,3192782176&fm=26&gp=0.jpg"/>
+        </div>
+        <div class="outer-front">
+            <img src="../images/u=2020089733,86807406&fm=26&gp=0.jpg"/>
+        </div>
+        <div class="outer-back">
+            <img src="../images/u=2658516123,2127016474&fm=26&gp=0.jpg"/>
+        </div>
+        <div class="outer-left">
+            <img src="../images/u=3936596531,876450989&fm=26&gp=0.jpg"/>
+        </div>
+        <div class="outer-right">
+            <img src="../images/u=3986564528,1649796138&fm=26&gp=0.jpg"/>
+        </div>
+    </div>
+    <!-- 内层立方体 -->
+    <div class="inner-cube">
+        <div class="inner-top">
+            <img src="../images/下载.jpg"/>
+        </div>
+        <div class="inner-bottom">
+            <img src="../images/下载 (1).jpg"/>
+        </div>
+        <div class="inner-front">
+            <img src="../images/下载 (2).jpg"/>
+        </div>
+        <div class="inner-back">
+            <img src="../images/下载 (3).jpg"/>
+        </div>
+        <div class="inner-left">
+            <img src="../images/u=2358027896,2629390945&fm=26&gp=0.jpg"/>
+        </div>
+        <div class="inner-right">
+            <img src="../images/u=2505845389,3637097424&fm=26&gp=0.jpg"/>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="message">
+        <div>
+            <a href="game.html" class="author">我的制作1.0版</a>
+        </div>
+        <div class="tip">
+            倾情提示：鼠标移入移出立方体，将会显示效果！
+        </div>
+        <div class="perfectTip" id="live2dMove">
+            固定我的娘
+        </div>
+    </div>
+    <!-- waifu-tips.js 依赖 JQuery 库 -->
+    <script src="../live2d/assets/jquery.min.js?v=3.3.1"></script>
+
+    <!-- 实现拖动效果，需引入 JQuery UI -->
+    <script src="../live2d/assets/jquery-ui.min.js?v=1.12.1"></script>
+    <div class="waifu"  id="move_box">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-modelId"></span>
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+    <script type="text/javascript">
+        /* 把 autoload.js 内容直接内置 */
+        $.ajax({url: '../live2d/assets/waifu-tips.js?v=1.4.2',dataType:"script", cache: true, async: false});
+        $.ajax({url: '../live2d/assets/live2d.min.js?v=1.0.5',dataType:"script", cache: true, async: false});
+
+        /* 可直接修改部分参数 */
+        live2d_settings['hitokotoAPI'] = 'jinrishici.com'; // 一言 API
+        live2d_settings['modelId'] = 2;                    // 默认模型 ID
+        live2d_settings['modelTexturesId'] = 6;            // 默认材质 ID
+        live2d_settings['modelStorage'] = false;           // 不储存模型 ID
+        live2d_settings['canCloseLive2d'] = true;         // 隐藏 关闭看板娘 按钮
+        live2d_settings['canTurnToHomePage'] = false;      // 隐藏 返回首页 按钮
+        live2d_settings['waifuSize'] = '300x265';          // 看板娘大小
+        live2d_settings['waifuTipsSize'] = '250x60';      // 提示框大小
+        live2d_settings['waifuFontSize'] = '20px';         // 提示框字体
+        live2d_settings['modelId'] = '6';         // 默认模型 ID，可在 F12 控制台找到
+        live2d_settings['modelTexturesId'] = '13';         // 默认模型 ID，可在 F12 控制台找到
+        live2d_settings['modelTexturesRandMode'] = 'switch';         // 材质切换，可选 'rand'(随机), 'switch'(顺序)
+        live2d_settings['waifuDraggable'] = 'unlimited';    // 拖拽样式，例如 'disable'(禁用), 'axis-x'(只能水平拖拽), 'unlimited'(自由拖拽)
+        live2d_settings['waifuEdgeSide'] = 'bottom:20';     // 看板娘贴边方向
+        live2d_settings['waifuToolFont'] = '36px';         // 工具栏字体
+        live2d_settings['waifuToolLine'] = '40px';         // 工具栏行高
+        live2d_settings['waifuToolTop'] = '-60px';         // 工具栏顶部边距
+
+        /* 内置 waifu-tips.json */
+        initModel("../live2d/assets/waifu-tips.json?v=1.4.2");
+    </script>
+</div>
+</body>
+</html>

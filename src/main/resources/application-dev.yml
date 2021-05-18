@@ -1,0 +1,67 @@
+spring:
+#  resources:
+#    static-locations: file:/Users/dlm/Documents/TLI/images
+  datasource:
+    #配置hikari连接池
+    hikari:
+      minimum-idle: 4
+      maximum-pool-size: 16
+      connection-timeout: 10000
+      idle-timeout: 30000
+      connection-init-sql: set names utf8mb4
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+#      datasource:
+#        master:
+#          username: root
+#          password: 123456
+#          driver-class-name: com.mysql.jdbc.Driver
+#          url: jdbc:mysql://81.70.170.21:3306/wqytext?characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+      datasource:
+        master:
+          username: wangqi
+          password: P@s5W0rdpwd
+          driver-class-name: com.mysql.jdbc.Driver
+          url:  jdbc:mysql://rm-uf6y2cduim8i5e33ajo.mysql.rds.aliyuncs.com
+#        sqlite:
+#          url: jdbc:sqlite:E:\我的闲余工作编程\myboot-api-server\db\base.db
+#          driver-class-name: org.sqlite.JDBC
+
+#  redis:
+#    database: 0
+#    host: 192.168.1.250
+#    port: 6379
+#    ssl: false
+#    password: 12345
+#    # 密码（默认为空）
+#    timeout: 1000   # 连接超时时长（毫秒）
+#    jedis:
+#      pool:
+#        max-active: -1
+#        # 连接池最大连接数（使用负值表示没有限制）
+#        max-wait: -1
+#        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#        max-idle: 10
+#        # 连接池中的最大空闲连接
+#        min-idle: 5
+#        # 连接池中的最小空闲连接
+#
+#  rabbitmq:
+#    host: 192.168.1.250
+#    port: 5672
+#    username: admin
+#    password: 123456
+#    virtual-host: /
+#    publisher-confirms: true
+#    publisher-returns: true
+#    listener:
+#      direct:
+#        acknowledge-mode: manual
+#      simple:
+#        acknowledge-mode: manual
+
+param:
+#  fileServerUrl: http://192.168.1.250:8007/
+  fileDir: /home/root/tcs/
+  filePath: picpath/
+  mapperUrl: file:/home/root/tcs/picpath/

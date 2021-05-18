@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rt.base.framework.mapper.MqSuccessRecordMapper">
+    <resultMap id="BaseResultMap" type="com.rt.base.framework.entity.MqSuccessRecord">
+        <id column="message_id" jdbcType="VARCHAR" property="messageId" />
+        <id column="message_content" jdbcType="VARCHAR" property="messageContent" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="create_user_id" jdbcType="VARCHAR" property="createUserId" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </resultMap>
+    <insert id="insertMqSuccessRecord" parameterType="com.rt.base.framework.entity.MqSuccessRecord">
+        insert into mq_success_record(message_id,message_content,remark,create_user_id,create_time)
+        values (#{messageId},#{messageContent},#{remark},#{createUserId},#{createTime})
+    </insert>
+
+    <select id="selectSuccessList" parameterType="com.rt.base.framework.entity.MqSuccessRecord" resultMap="BaseResultMap">
+        select
+        message_id,message_content,remark,create_user_id,create_time
+        from mq_success_record
+        order by create_time desc
+    </select>
+</mapper>

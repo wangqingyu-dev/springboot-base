@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue 基础</title>
+</head>
+<body>
+<div class="input-num">
+
+</div>
+
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            food: '西蓝花炒蛋'
+        },
+        methods: {
+            doIt:function () {
+                alert("做It")
+            },
+            changedoIt:function () {
+                alert(this.food + "你的")
+            }
+        }
+    })
+</script>
+</body>
+</html>
